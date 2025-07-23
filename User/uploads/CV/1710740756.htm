@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- index22:59-->
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- index22:59-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <title>KK PATEL HOSPITAL</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/assets/css/style.css">
+
+    <!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+        <div class="header">
+			<div class="header-left">
+				<a href="admindashboard" class="logo">
+					<img src="http://127.0.0.1:8000/img/logo3.png" width="50" height="50" alt=""> <span>KK PATEL HOSPITAL</span>
+				</a>
+			</div>
+			<a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+            <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"><i class="fa fa-bars"></i></a>
+            <ul class="nav user-menu float-right">
+                <li class="nav-item dropdown d-none d-sm-block">    
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"><i class="fa fa-bell-o"></i> <span class="badge badge-pill bg-danger float-right">3</span></a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header">
+                            <span>Notifications</span>
+                        </div>
+                        <div class="drop-scroll">
+                            <ul class="notification-list">
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">
+												<img alt="John Doe" src="http://127.0.0.1:8000/assets/img/user.jpg" class="img-fluid">
+											</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
+												<p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                               
+                                
+                               
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="activities.html">View all Notifications</a>
+                        </div>
+                    </div>
+                    
+                </li>
+                
+                <li class="nav-item dropdown d-none d-sm-block">
+                    <a href="javascript:void(0);" id="open_msg_box" class="hasnotifications nav-link"><i class="fa fa-comment-o"></i> <span class="badge badge-pill bg-danger float-right">8</span></a>
+                </li>
+                <li class="nav-item dropdown has-arrow">
+                    <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
+                        <span class="user-img">
+							<img class="rounded-circle" src="http://127.0.0.1:8000/assets/img/user.jpg" width="24" alt="Admin">
+							<span class="status online"></span>
+						</span>
+						<span>Admin</span>
+                    </a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="http://127.0.0.1:8000/admin_profile">My Profile</a>
+						<a class="dropdown-item" href="http://127.0.0.1:8000/admin_change_password">Change password</a>
+						<a class="dropdown-item" href="/logout">Logout</a>
+					</div>
+                </li>
+            </ul>
+            <div class="dropdown mobile-user-menu float-right">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="http://127.0.0.1:8000/admin_profile">My Profile</a>
+                    <a class="dropdown-item" href="http://127.0.0.1:8000/admin_change_password">Change password</a>
+                    <a class="dropdown-item" href="/logout">Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">Main</li>
+                        <li >
+                            <a href="http://127.0.0.1:8000/admin/admindashboard"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
+                        </li>
+                        
+                        <li class="submenu">
+							<a href="#"><i class="fa fa-user-md"></i> <span> Doctors </span> <span class="menu-arrow"></span></a>
+							<ul style="display: none;">
+								<li><a href="http://127.0.0.1:8000/admindoctors">View Doctors List</a></li>
+								<li><a href="http://127.0.0.1:8000/add_doctor">Add Doctor</a></li>
+								
+							</ul>
+						</li>
+
+                        <li class="submenu">
+							<a href="#"><i class="fa fa-hospital-o"></i> <span> Departments </span> <span class="menu-arrow"></span></a>
+							<ul style="display: none;">
+								<li><a href="http://127.0.0.1:8000/admindepartments_list">View Department List</a></li>
+								<li><a href="http://127.0.0.1:8000/add_department">Add Department</a></li>
+								
+							</ul>
+						</li>
+                        
+                        <li class="submenu">
+							<a href="#"><i class="fa fa-user"></i> <span> Appointments </span> <span class="menu-arrow"></span></a>
+							<ul style="display: none;">
+								<li><a href="http://127.0.0.1:8000/adminappointments">View appointment List</a></li>
+								<li><a href="http://127.0.0.1:8000">Add Appointment</a></li>
+								
+							</ul>
+						</li>
+                        <li>
+                            <a href="http://127.0.0.1:8000/adminfeedback"><i class="fa fa-comment-o"></i> <span>Feedback & Review</span></a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8000/adminpress"><i class="fa fa-newspaper-o"></i> <span>Press Desk</span></a>
+                        </li>
+                        
+                        <li class="submenu">
+							<a href="#"><i class="fa fa-phone-square"></i> <span> Contact us </span> <span class="menu-arrow"></span></a>
+							<ul style="display: none;">
+								<li><a href="http://127.0.0.1:8000/admincontact">View Contact List</a></li>
+								<li><a href="http://127.0.0.1:8000">Replied contacts</a></li>
+								
+							</ul>
+						</li>
+                        
+						
+						
+						
+                        
+                        
+                        
+                        
+						
+                        
+                        <li class="menu-title">Extras</li>
+                        <li class="submenu">
+                            <a href="#"><i class="fa fa-columns"></i> <span>Pages</span> <span class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a href="login.html"> Login </a></li>
+                                <li><a href="register.html"> Register </a></li>
+                                <li><a href="forgot-password.html"> Forgot Password </a></li>
+                                <li><a href="change-password2.html"> Change Password </a></li>
+                                <li><a href="lock-screen.html"> Lock Screen </a></li>
+                                <li><a href="profile.html"> Profile </a></li>
+                                <li><a href="gallery.html"> Gallery </a></li>
+                                <li><a href="error-404.html">404 Error </a></li>
+                                <li><a href="error-500.html">500 Error </a></li>
+                                <li><a href="blank-page.html"> Blank Page </a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        <!-- ... existing content ... -->
+
+       
+
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script src="http://127.0.0.1:8000/assets/js/jquery-3.2.1.min.js"></script>
+	<script src="http://127.0.0.1:8000/assets/js/popper.min.js"></script>
+    <script src="http://127.0.0.1:8000/assets/js/bootstrap.min.js"></script>
+    <script src="http://127.0.0.1:8000/assets/js/jquery.slimscroll.js"></script>
+    <script src="http://127.0.0.1:8000/assets/js/Chart.bundle.js"></script>
+<script src="http://127.0.0.1:8000/assets/js/chart.js"></script>
+    <script src="http://127.0.0.1:8000/assets/js/app.js"></script>
+
+</body>
+
+
+<!-- index22:59-->
+</html><body>
+
+    <div class="page-wrapper">
+        <div class="content">
+            <div class="row">
+                <div class="col-sm-4 col-3">
+                    <h4 class="page-title">Appointments</h4>
+                </div>
+                <div class="col-sm-8 col-9 text-right m-b-20">
+                    <a href="add_appointment" class="btn btn btn-primary btn-rounded float-right"><i class="fa fa-plus"></i> Add Appointment</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <table class="table table-striped custom-table">
+                            <thead>
+                                <tr>
+                                    <th>Appointment ID</th>
+                                    <th>Patient Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Gender</th>
+                                    <th>Department</th>
+                                    <th>Doctor Name</th>
+                                    <th>Appointment Date</th>
+                                    <th>Appointment Time</th>
+                                    <th>Problem facing</th>
+                                    <th>Status</th>
+                                    <th class="text-right">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>APT0001</td>
+                                    <td><img width="28" height="28" src="assets/img/user.jpg" class="rounded-circle m-r-5" alt=""> Denise Stevens</td>
+                                    <td>hi@gmail.com</td>
+                                    <td>5656437623</td>
+                                    <td>Male</td>
+                                    <td>Cardiology</td>
+                                    <td>Henry Daniels</td>
+                                    <td>30 Jan 2024</td>
+                                    <td>10:00am - 10:20am</td>
+                                    <td>Fever</td> 
+                                    <td class="text-center">
+                                        <div class="dropdown action-label">
+                                            <a class="custom-badge status-red dropdown-toggle" href="#" data-toggle="" aria-expanded="false">
+                                                Pending
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#">Pending</a>
+                                                <a class="dropdown-item" href="#">Approved</a>
+                                                <a class="dropdown-item" href="#">Declined</a>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="edit-appointment.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_appointment"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>APT0002</td>
+                                    <td><img width="28" height="28" src="assets/img/user.jpg" class="rounded-circle m-r-5" alt=""> Denise Stevens</td>
+                                    <td>hi@gmail.com</td>
+                                    <td>5656437623</td>
+                                    <td>female</td>
+                                    <td>Cardiology</td>
+                                    <td>Henry Daniels</td>
+                                    <td>30 Jan 2024</td>
+                                    <td>10:00am - 10:20am</td>
+                                    <td>Stomach Paining</td>
+                                    <td class="text-center">
+                                        <div class="dropdown action-label">
+                                            <a class="custom-badge status-red dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                Pending
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#">Pending</a>
+                                                <a class="dropdown-item" href="#">Approved</a>
+                                                <a class="dropdown-item" href="#">Declined</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="edit-appointment.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_appointment"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+
+    
+
+</body>
+
+
+<!-- index22:59-->
+</html>

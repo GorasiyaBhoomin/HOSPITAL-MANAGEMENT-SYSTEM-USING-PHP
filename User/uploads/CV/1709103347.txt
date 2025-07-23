@@ -1,0 +1,15 @@
+controls and their listeners
+
+textview=setonclicklistener
+edittext=addtextchangedlistener
+radiobutton/checkbox/switch/togglenutton=setoncheckedchangedlistener
+seekbar=setonseekbarchangedlistener
+button=setonclick/ ondoubleclick/onlongclick
+
+atv/spinner=setonitemselectedlistener
+
+
+
+
+task:
+how to implement alert dialogue
