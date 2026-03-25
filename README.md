@@ -1,56 +1,110 @@
-# Hospital Management System (PHP)
+# <div align="center">🏥 HOSPITAL MANAGEMENT SYSTEM</div>
 
-Hospital Management System is a PHP + MySQL web application for managing hospital operations such as patient registration, appointment booking, and an admin/doctor dashboard for managing core hospital data.
+<div align="center">
 
-## Features
-- Public website pages (Home, About, Doctors, Departments, Press Desk, Gallery, Contact, Feedback)
-- User accounts with login/registration, password reset, and activation flow
-- Appointment booking and appointment history
-- Admin dashboard for managing doctors, departments, patients, appointments, feedback, etc.
-- Doctor dashboard for managing appointments/visits and profile
+<img src="https://source.unsplash.com/1200x400/?hospital,healthcare" width="100%" style="border-radius:12px"/>
 
-## Tech Stack
-- PHP (mysqli, sessions)
-- MySQL / MariaDB
-- Apache (or Laragon/XAMPP) with `mod_rewrite` enabled
-- Front-end assets included in the repository (CSS/JS)
+<br/><br/>
 
-The repository also includes `vendor/` (PHPMailer) so you do not need Composer to run the app.
+# 🏥 HOSPITAL MANAGEMENT SYSTEM (PHP)
 
-## Prerequisites
-- PHP 8.x (SQL dump was generated with PHP 8.1.10)
-- MySQL 8.x (SQL dump was generated with MySQL 8.0.30)
-- Apache/Laragon/XAMPP with PHP and MySQL enabled
+**A hospital web application for appointments and role-based dashboards**
 
-## Database Setup
-1. Create a MySQL database named `KK_PATEL_HOSPITAL2`
-   - Note: the SQL dump file is `kk_patel_hospital2.sql` (lowercase name in the dump header).
-2. Import the database dump:
-   - Use phpMyAdmin -> your created database -> **Import** -> select `kk_patel_hospital2.sql`
-3. Verify the DB connection in `Database/connection.php`
-   - Default values in this project:
-     - Host: `localhost`
-     - User: `root`
-     - Password: *(blank / empty)*
-     - Database: `KK_PATEL_HOSPITAL2`
+[![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
+[![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![Apache](https://img.shields.io/badge/Apache-2.4-D22128?style=for-the-badge&logo=apache&logoColor=white)](https://httpd.apache.org/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-UI-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 
-If your MySQL credentials differ, update `Database/connection.php` accordingly.
+</div>
 
-## Running the Project Locally
-1. Copy/keep this folder inside your web server root (for example, in Laragon's `www` folder).
-2. Make sure Apache has `mod_rewrite` enabled (the project uses `.htaccess` rewrite rules).
-3. Open your browser:
-   - `http://localhost/<your-project-folder>/`
+---
 
-The app uses `index.php` as the main entry point.
+## ✨ Features
 
-## Login URLs
-- User login: `login.php` (after login, user dashboard is under `User/index.php`)
-- Admin login: `admin/kkadminlogin.php` (admin dashboard: `admin/index-2.php`)
-- Doctor login: `Doctor/doctorlogin.php` (doctor dashboard is under `Doctor/index-2.php`)
+<table>
+<tr>
+<td width="50%">
 
-## Demo (Animated)
-If you want real app screenshots/gifs, replace these SVG files with your own images (keep the same filenames or update the links below).
+### 👤 User Portal
+- 🏠 Public landing pages (Home, About, Doctors, Departments, Press Desk, Gallery, Contact, Feedback)
+- 🚨 Register & login with activation + password reset
+- 📅 Book an appointment (date + time slot)
+- 📋 View appointment history
+- 👤 Manage profile and change password
+
+</td>
+<td width="50%">
+
+### 🛡️ Admin Panel
+| Module | Description |
+|---|---|
+| 📊 Dashboard | Overview cards and appointment stats |
+| 📋 Appointments | View/manage appointments |
+| 🚑 Doctors | Add/edit/remove doctors |
+| 🏥 Departments | Add/edit departments |
+| 👥 Patients | Add/edit/view patient records |
+| 💬 Feedback | View and review feedback |
+| 🧾 Profile | Admin profile management |
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🧑‍⚕️ Module Preview
+
+<table>
+<tr>
+<td align="center" width="33%">
+<img src="https://source.unsplash.com/400x220/?doctor,stethoscope" width="100%" style="border-radius:10px"/>
+<br/><b>Doctor Dashboard</b>
+<br/><sub>Manage visits & appointments</sub>
+</td>
+<td align="center" width="33%">
+<img src="https://source.unsplash.com/400x220/?hospital,admin" width="100%" style="border-radius:10px"/>
+<br/><b>Admin Panel</b>
+<br/><sub>Doctors • Departments • Patients</sub>
+</td>
+<td align="center" width="33%">
+<img src="https://source.unsplash.com/400x220/?patient,care" width="100%" style="border-radius:10px"/>
+<br/><b>User Portal</b>
+<br/><sub>Appointments • Profile • History</sub>
+</td>
+</tr>
+</table>
+
+---
+
+## 📸 App Screenshots
+
+### 🏠 Home / Landing Page
+<img src="https://source.unsplash.com/900x450/?hospital,technology" width="100%" style="border-radius:10px"/>
+
+<br/>
+
+### 🔐 User Login / Registration
+<img src="https://source.unsplash.com/900x450/?login,app" width="100%" style="border-radius:10px"/>
+
+<br/>
+
+### 📅 Appointment Booking
+<img src="https://source.unsplash.com/900x450/?appointment,calendar" width="100%" style="border-radius:10px"/>
+
+<br/>
+
+### 📊 Admin Dashboard
+<img src="https://source.unsplash.com/900x450/?dashboard,medical" width="100%" style="border-radius:10px"/>
+
+<br/>
+
+### 🧑‍⚕️ Doctor Dashboard
+<img src="https://source.unsplash.com/900x450/?doctor,consultation" width="100%" style="border-radius:10px"/>
+
+---
+
+## ✅ Animated Demo (Optional)
+These are built-in animated SVGs that you can embed locally (they will show on GitHub once committed):
 
 <p align="left">
   <img src="readme-assets/loading-spinner.svg" width="220" alt="Loading spinner" />
@@ -58,14 +112,84 @@ If you want real app screenshots/gifs, replace these SVG files with your own ima
   <img src="readme-assets/appointment-pulse.svg" width="260" alt="Appointment pulse" />
 </p>
 
-## Repository Notes
-- Uploaded images/assets are stored inside the `admin/assets/uploads`, `Doctor/uploads`, and `User/uploads` folders (depending on the role).
-- The SQL dump (`kk_patel_hospital2.sql`) contains pre-filled tables and hashed password values.
-  - For testing, create accounts using the application UI, or update/reset credentials via the database and/or password reset flow.
+---
 
-## Project Report
-- See `WP_PROJECT_GROUP_8_FUNCTIONALITY.pdf` for additional project documentation (if present in this repository).
+## 🛠️ Tech Stack
 
-## License
-Add your license information here (MIT/Apache-2.0/etc.) if applicable.
+| Layer | Technology |
+|---|---|
+| Backend | PHP (mysqli, sessions) |
+| Database | MySQL / MariaDB |
+| Web Server | Apache (Laragon/XAMPP supported) |
+| UI | Bootstrap + custom CSS |
+| Email (OTP/Reset) | PHPMailer in `vendor/` |
+| Routing | `.htaccess` + direct PHP page entry points |
+
+---
+
+## 📁 Project Structure
+
+```
+HOSPITAL MANAGEMENT SYSTEM USING PHP/
+├── admin/                 # Admin dashboard pages
+├── Doctor/                # Doctor dashboard pages
+├── User/                  # User portal pages
+├── Database/connection.php# DB connection (mysqli)
+├── kk_patel_hospital2.sql # SQL dump for tables + sample data
+├── assets2/              # Public website CSS/JS/images
+└── vendor/               # PHPMailer (already included)
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- PHP 8.x
+- MySQL 8.x
+- Apache enabled (Laragon/XAMPP)
+
+### Run Locally (Laragon/XAMPP)
+1. Put this project folder inside your web server root (for example, Laragon `www/`).
+2. Import database:
+   - phpMyAdmin -> create database `KK_PATEL_HOSPITAL2`
+   - Import `kk_patel_hospital2.sql`
+3. Ensure DB credentials match `Database/connection.php`
+   - Default in this repo: host `localhost`, user `root`, empty password, DB `KK_PATEL_HOSPITAL2`
+4. Open:
+   - `http://localhost/<your-folder-name>/`
+
+---
+
+## 🔐 Key Pages (Login)
+
+| URL | Page |
+|---|---|
+| `login.php` | User Login / Register entry |
+| `admin/kkadminlogin.php` | Admin Login |
+| `Doctor/doctorlogin.php` | Doctor Login |
+| `User/index.php` | User dashboard |
+| `admin/index-2.php` | Admin dashboard |
+| `Doctor/index-2.php` | Doctor dashboard |
+
+---
+
+## 👥 Why Choose This System?
+
+| Feature | Description |
+|---|---|
+| 📅 Appointment Management | Book appointments with saved history |
+| 🧑‍⚕️ Role-Based Dashboards | Separate User, Admin, Doctor workflows |
+| 🛠️ DB Included | SQL dump provided in the repo |
+| 🔐 Auth & Recovery | Login, activation, OTP/reset flows (via PHPMailer) |
+| 💬 Feedback | Contact & feedback modules for hospital communication |
+
+---
+
+## 📄 License
+This project is for academic purposes.
+
+<div align="center">
+<sub>Built with ❤️ using PHP · MySQL · Apache</sub>
+</div>
 
