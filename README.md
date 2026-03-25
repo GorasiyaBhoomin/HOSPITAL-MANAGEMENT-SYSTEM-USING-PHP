@@ -49,6 +49,15 @@ The app uses `index.php` as the main entry point.
 - Admin login: `admin/kkadminlogin.php` (admin dashboard: `admin/index-2.php`)
 - Doctor login: `Doctor/doctorlogin.php` (doctor dashboard is under `Doctor/index-2.php`)
 
+## Demo (Animated)
+If you want real app screenshots/gifs, replace these SVG files with your own images (keep the same filenames or update the links below).
+
+![Loading spinner](readme-assets/loading-spinner.svg)
+
+![Bounce heart](readme-assets/bounce-heart.svg)
+
+![Appointment pulse](readme-assets/appointment-pulse.svg)
+
 ## Repository Notes
 - Uploaded images/assets are stored inside the `admin/assets/uploads`, `Doctor/uploads`, and `User/uploads` folders (depending on the role).
 - The SQL dump (`kk_patel_hospital2.sql`) contains pre-filled tables and hashed password values.
