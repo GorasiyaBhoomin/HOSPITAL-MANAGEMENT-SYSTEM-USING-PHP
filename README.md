@@ -1,8 +1,6 @@
-# <div align="center">🏥 HOSPITAL MANAGEMENT SYSTEM</div>
-
 <div align="center">
 
-<img src="https://source.unsplash.com/1200x400/?hospital,healthcare" width="100%" style="border-radius:12px"/>
+<img src="https://images.unsplash.com/photo-1576765607924-3f7b07f3f9c5?w=1200&h=400&q=85&fit=crop" width="100%" style="border-radius:12px"/>
 
 <br/><br/>
 
@@ -57,17 +55,17 @@
 <table>
 <tr>
 <td align="center" width="33%">
-<img src="https://source.unsplash.com/400x220/?doctor,stethoscope" width="100%" style="border-radius:10px"/>
+<img src="https://images.unsplash.com/photo-1580281658223-9b93f18ae9ae?w=400&h=220&q=80&fit=crop" width="100%" style="border-radius:10px"/>
 <br/><b>Doctor Dashboard</b>
 <br/><sub>Manage visits & appointments</sub>
 </td>
 <td align="center" width="33%">
-<img src="https://source.unsplash.com/400x220/?hospital,admin" width="100%" style="border-radius:10px"/>
+<img src="https://images.unsplash.com/photo-1551076805-e1869033e561?w=400&h=220&q=80&fit=crop" width="100%" style="border-radius:10px"/>
 <br/><b>Admin Panel</b>
 <br/><sub>Doctors • Departments • Patients</sub>
 </td>
 <td align="center" width="33%">
-<img src="https://source.unsplash.com/400x220/?patient,care" width="100%" style="border-radius:10px"/>
+<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&h=220&q=80&fit=crop" width="100%" style="border-radius:10px"/>
 <br/><b>User Portal</b>
 <br/><sub>Appointments • Profile • History</sub>
 </td>
@@ -79,27 +77,27 @@
 ## 📸 App Screenshots
 
 ### 🏠 Home / Landing Page
-<img src="https://source.unsplash.com/900x450/?hospital,technology" width="100%" style="border-radius:10px"/>
+<img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=900&h=450&q=80&fit=crop" width="100%" style="border-radius:10px"/>
 
 <br/>
 
 ### 🔐 User Login / Registration
-<img src="https://source.unsplash.com/900x450/?login,app" width="100%" style="border-radius:10px"/>
+<img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=900&h=450&q=80&fit=crop" width="100%" style="border-radius:10px"/>
 
 <br/>
 
 ### 📅 Appointment Booking
-<img src="https://source.unsplash.com/900x450/?appointment,calendar" width="100%" style="border-radius:10px"/>
+<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=900&h=450&q=80&fit=crop" width="100%" style="border-radius:10px"/>
 
 <br/>
 
 ### 📊 Admin Dashboard
-<img src="https://source.unsplash.com/900x450/?dashboard,medical" width="100%" style="border-radius:10px"/>
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=450&q=80&fit=crop" width="100%" style="border-radius:10px"/>
 
 <br/>
 
 ### 🧑‍⚕️ Doctor Dashboard
-<img src="https://source.unsplash.com/900x450/?doctor,consultation" width="100%" style="border-radius:10px"/>
+<img src="https://images.unsplash.com/photo-1584516150909-c43483ee7932?w=900&h=450&q=80&fit=crop" width="100%" style="border-radius:10px"/>
 
 ---
 
@@ -134,7 +132,7 @@ HOSPITAL MANAGEMENT SYSTEM USING PHP/
 ├── admin/                 # Admin dashboard pages
 ├── Doctor/                # Doctor dashboard pages
 ├── User/                  # User portal pages
-├── Database/connection.php# DB connection (mysqli)
+├── Database/connection.php # DB connection (mysqli)
 ├── kk_patel_hospital2.sql # SQL dump for tables + sample data
 ├── assets2/              # Public website CSS/JS/images
 └── vendor/               # PHPMailer (already included)
