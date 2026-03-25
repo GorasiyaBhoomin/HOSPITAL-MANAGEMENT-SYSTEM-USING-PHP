@@ -52,11 +52,11 @@ The app uses `index.php` as the main entry point.
 ## Demo (Animated)
 If you want real app screenshots/gifs, replace these SVG files with your own images (keep the same filenames or update the links below).
 
-![Loading spinner](readme-assets/loading-spinner.svg)
-
-![Bounce heart](readme-assets/bounce-heart.svg)
-
-![Appointment pulse](readme-assets/appointment-pulse.svg)
+<p align="left">
+  <img src="readme-assets/loading-spinner.svg" width="220" alt="Loading spinner" />
+  <img src="readme-assets/bounce-heart.svg" width="240" alt="Bounce heart" />
+  <img src="readme-assets/appointment-pulse.svg" width="260" alt="Appointment pulse" />
+</p>
 
 ## Repository Notes
 - Uploaded images/assets are stored inside the `admin/assets/uploads`, `Doctor/uploads`, and `User/uploads` folders (depending on the role).
